@@ -5,6 +5,8 @@ import psychopy.app
 import psychopy.data
 import psychopy.experiment
 import psychopy.gui
+import psychopy.gui.qtgui
+import psychopy.gui.wxgui
 import psychopy.hardware
 import psychopy.monitors
 import psychopy.preferences
