@@ -2,13 +2,10 @@ import sys
 
 import psychopy
 import psychopy.app
-import psychopy.app.builder
-import psychopy.app.coder
 import psychopy.data
 import psychopy.experiment
 import psychopy.gui
 import psychopy.gui.qtgui
-import psychopy.gui.wxgui
 import psychopy.hardware
 import psychopy.monitors
 import psychopy.preferences
@@ -24,3 +21,8 @@ if sys.platform != 'win32':
 if sys.platform != 'linux':
     import psychopy.event
     import psychopy.visual
+
+    # For whatever reason, WX doesn't work in the CI for Linux either...
+    import psychopy.app.builder
+    import psychopy.app.coder
+    import psychopy.gui.wxgui
