@@ -8,14 +8,11 @@ import psychopy.gui
 import psychopy.hardware
 import psychopy.monitors
 import psychopy.preferences
-
-# Only test audio on macOS for now.
-if sys.platform == 'darwin':
-    import psychopy.sound
+import psychopy.sound
+assert psychopy.sound.audioLib == 'sounddevice'
 
 # Disable problematic tests on Linux.
 # See https://github.com/conda-forge/staged-recipes/pull/8645
 if sys.platform != 'linux':
     import psychopy.event
     import psychopy.visual
-
