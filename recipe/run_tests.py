@@ -2,6 +2,8 @@ import sys
 
 import psychopy
 import psychopy.app
+import psychopy.app.builder
+import psychopy.app.coder
 import psychopy.data
 import psychopy.experiment
 import psychopy.gui
