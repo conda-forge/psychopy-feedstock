@@ -5,16 +5,17 @@ Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
 ===================================================================
 --- psychopy/tools/gltools.py	(date 1570200959000)
 +++ psychopy/tools/gltools.py	(date 1575032192000)
-@@ -89,7 +89,7 @@
+@@ -89,8 +89,7 @@
  import warnings
 
  # create a query counter to get absolute GPU time
 -QUERY_COUNTER = GL.GLuint()
+-GL.glGenQueries(1, ctypes.byref(QUERY_COUNTER))
 +QUERY_COUNTER = None
- GL.glGenQueries(1, ctypes.byref(QUERY_COUNTER))
 
 
-@@ -1086,6 +1086,11 @@
+ # compatible Numpy and OpenGL types for common GL type enums
+@@ -1086,6 +1085,11 @@
          timeElapsed = (t1 - t0) * 1e-9  # take difference, convert to seconds
 
      """
