@@ -1,4 +1,3 @@
 # Dependencies listed here are merely required for running the tests.
-xorg-x11-server-Xvfb
-gtk2
+# xorg-x11-server-Xvfb
 webkitgtk
