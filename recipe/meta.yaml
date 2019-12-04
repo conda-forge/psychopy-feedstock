@@ -85,7 +85,7 @@ test:
 
     - python run_tests.py      # [not linux]
     # https://stackoverflow.com/a/30029944/1944216
-    - xvfb-run --server-args=":99 -screen 0 1024x768x24 -ac +extension GLX -noreset" python run_tests.py  # [linux]
+    - LC_ALL=en_US.utf8 xvfb-run --server-args=":99 -screen 0 1024x768x24 -ac +extension GLX -noreset" python run_tests.py  # [linux]
 
 about:
   home: https://www.psychopy.org
