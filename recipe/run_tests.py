@@ -1,6 +1,6 @@
 import sys
 import os
-os.environ['LC_ALL'] = 'en_US.UTF-8'
+os.environ['LC_ALL'] = 'en_US.utf8'
 
 import psychopy
 import psychopy.app
