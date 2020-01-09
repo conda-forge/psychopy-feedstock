@@ -12,7 +12,7 @@ source:
     - gltools-win.patch
 
 build:
-  number: 3
+  number: 4
   skip: true  # [py<36]
   script: "{{ PYTHON }} -m pip install --no-deps . -vv"
   entry_points:
@@ -48,6 +48,9 @@ requirements:
     - pillow
     - psutil
     - pyglet >=1.4.9
+    - glfw                     # [not linux]
+    - glfw !=3.3.1             # [linux]
+    - pyglfw
     - pyobjc-framework-quartz  # [osx]
     - pyopengl
     - pyosf
