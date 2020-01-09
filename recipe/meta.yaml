@@ -12,7 +12,7 @@ source:
     - gltools-win.patch
 
 build:
-  number: 4
+  number: 5
   skip: true  # [py<36]
   script: "{{ PYTHON }} -m pip install --no-deps . -vv"
   entry_points:
@@ -66,6 +66,7 @@ requirements:
     - pyWinhook                # [win]
     - pyyaml
     - pyzmq
+    - questplus >=2019.3
     - requests
     - scipy
     - wxpython !=4.0.2, !=4.0.3
