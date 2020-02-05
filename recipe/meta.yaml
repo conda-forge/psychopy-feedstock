@@ -1,5 +1,5 @@
 {% set name = "PsychoPy" %}
-{% set version = "3.2.4" %}
+{% set version = "2020.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.zip
-  sha256: 28a8c425b2baab127346a148aa52fd4e098359506efac5df2b205177a03ec4e8
+  sha256: 79c9d182674fbe8da1b921239da17fc463caf56f6a4938e7660708348312db0e
   patches:
     - gltools-win.patch
 
 build:
-  number: 5
+  number: 0
   skip: true  # [py<36]
   script: "{{ PYTHON }} -m pip install --no-deps . -vv"
   entry_points:
