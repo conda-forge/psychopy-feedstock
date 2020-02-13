@@ -10,7 +10,7 @@ source:
   sha256: 79c9d182674fbe8da1b921239da17fc463caf56f6a4938e7660708348312db0e
 
 build:
-  number: 0
+  number: 1
   skip: true  # [py<36]
   script: "{{ PYTHON }} -m pip install --no-deps . -vv"
   entry_points:
@@ -39,7 +39,7 @@ requirements:
     - imageio >=2.5
     - imageio-ffmpeg
     - json_tricks
-    - matplotlib
+    - matplotlib-base
     - moviepy
     - msgpack-numpy
     - msgpack-python
