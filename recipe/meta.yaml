@@ -1,5 +1,5 @@
 {% set name = "PsychoPy" %}
-{% set version = "2020.1.2" %}
+{% set version = "2020.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,15 +7,15 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.zip
-  sha256: 3f855764a022097338452c1bb187a94a0b684af1026888e9c922d9ee1cad2d9b
+  sha256: 3ce5cb16fd04c4c692489fbd680f804c2d077a281f444d0a51bbdf8cd7effeab
 
 build:
   number: 0
   skip: true  # [py<36]
-  script: "{{ PYTHON }} -m pip install --no-deps . -vv"
+  script: {{ PYTHON }} -m pip install --no-deps . -vv
   entry_points:
     - psychopy = psychopy.app.psychopyApp:main
-  osx_is_app: True
+  osx_is_app: true
 
 requirements:
   host:
@@ -99,13 +99,13 @@ about:
   license: GPL-3.0
   license_family: GPL
   license_file: LICENSE
-  summary: 'Psychology experiment software in Python'
+  summary: Psychology experiment software in Python
   description: |
     PsychoPy is an open-source package for creating psychology stimuli in
     Python (A real and free alternative to Matlab). PsychoPy combines the
     graphical strengths of OpenGL with the easy Python syntax to give
     psychophysics a free and simple stimulus presentation and control package.
-  doc_url:  https://www.psychopy.org/documentation.html
+  doc_url: https://www.psychopy.org/documentation.html
   dev_url: https://github.com/psychopy/psychopy
 
 extra:
