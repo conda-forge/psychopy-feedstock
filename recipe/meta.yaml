@@ -72,6 +72,7 @@ requirements:
     - questplus >=2019.3
     - requests
     - scipy
+    - websocket-client
     - wxpython !=4.0.2, !=4.0.3
     - xlrd
 
