@@ -17,13 +17,13 @@ if sys.platform != 'win32':
     import psychopy.sound
     assert psychopy.sound.audioLib == 'sounddevice'
 
-    # Builder will also look for a working audio backend, so disable this
-    # test for Windows too.
-    import psychopy.app.builder
-
 # Disable problematic tests on Linux.
 # See https://github.com/conda-forge/staged-recipes/pull/8645
 if sys.platform != 'linux':
     import psychopy.event
     import psychopy.visual
+
+# Skip on Linux and Windows
+if sys.platform == 'darwin':
     import psychopy.app.coder
+    import psychopy.app.builder
