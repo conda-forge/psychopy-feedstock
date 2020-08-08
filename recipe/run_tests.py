@@ -2,8 +2,6 @@ import sys
 
 import psychopy
 import psychopy.app
-import psychopy.app.builder
-import psychopy.app.coder
 import psychopy.data
 import psychopy.experiment
 import psychopy.gui
@@ -24,3 +22,8 @@ if sys.platform != 'win32':
 if sys.platform != 'linux':
     import psychopy.event
     import psychopy.visual
+
+# Skip on Linux and Windows
+if sys.platform == 'darwin':
+    import psychopy.app.coder
+    import psychopy.app.builder
