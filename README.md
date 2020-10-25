@@ -5,9 +5,13 @@ Home: https://www.psychopy.org
 
 Package license: GPL-3.0-only
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/psychopy-feedstock/blob/master/LICENSE.txt)
 
 Summary: Psychology experiment software in Python
+
+Development: https://github.com/psychopy/psychopy
+
+Documentation: https://www.psychopy.org/documentation.html
 
 PsychoPy is an open-source package for creating psychology stimuli in
 Python (A real and free alternative to Matlab). PsychoPy combines the
