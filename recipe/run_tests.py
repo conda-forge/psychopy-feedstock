@@ -3,7 +3,6 @@ import sys
 import psychopy
 import psychopy.app
 import psychopy.data
-import psychopy.experiment
 import psychopy.gui
 import psychopy.gui.qtgui
 import psychopy.gui.wxgui
@@ -22,6 +21,7 @@ if sys.platform != 'win32':
 if sys.platform != 'linux':
     import psychopy.event
     import psychopy.visual
+    import psychopy.experiment
 
 # Skip on Linux and Windows
 if sys.platform == 'darwin':
