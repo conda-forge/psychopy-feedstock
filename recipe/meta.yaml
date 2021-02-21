@@ -25,6 +25,7 @@ requirements:
   run:
     - python
     - python.app               # [osx]
+    - setuptools
     - arabic_reshaper
     - astunparse
     - configobj
