@@ -1,5 +1,5 @@
 {% set name = "PsychoPy" %}
-{% set version = "2021.1.3" %}
+{% set version = "2021.1.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.zip
-  sha256: 488c01b1c2047bc47ec08f275bd54a41cdcf957cdac2d61ac8102e29cc00ad70
+  sha256: 961017a6649de75063fc6ead5198e6bf9fa55836b1f808938ad066448e153d11
 
 build:
   number: 0
