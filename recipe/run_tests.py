@@ -2,7 +2,7 @@ import sys
 
 import psychopy
 import psychopy.app
-import psychopy.data
+# import psychopy.data
 import psychopy.gui
 import psychopy.gui.qtgui
 import psychopy.gui.wxgui
@@ -27,3 +27,4 @@ if sys.platform != 'linux':
 if sys.platform == 'darwin':
     import psychopy.app.coder
     import psychopy.app.builder
+
