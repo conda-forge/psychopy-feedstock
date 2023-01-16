@@ -4,7 +4,7 @@ import psychopy
 import psychopy.app
 import psychopy.app.builder
 import psychopy.app.coder
-import psychopy.data
+# import psychopy.data
 import psychopy.experiment
 import psychopy.gui
 import psychopy.gui.qtgui
@@ -23,4 +23,3 @@ if sys.platform != 'win32':
 # See https://github.com/conda-forge/staged-recipes/pull/8645
 if sys.platform != 'linux':
     import psychopy.event
-    import psychopy.visual
