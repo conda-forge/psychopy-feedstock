@@ -10,8 +10,7 @@ source:
   sha256: c90d66d3149f0adc66d72181746554880e89544a8b70a44d573bacf41d98e7bf
 
 build:
-  number: 0
-  skip: true  # [py<36]
+  number: 1
   script: {{ PYTHON }} -m pip install --no-deps . -vv
   entry_points:
     - psychopy = psychopy.app.psychopyApp:main
