@@ -2,7 +2,6 @@ import sys
 
 import psychopy
 import psychopy.app
-import psychopy.data
 import psychopy.gui
 import psychopy.gui.qtgui
 import psychopy.gui.wxgui
@@ -19,6 +18,7 @@ if sys.platform != 'win32':
 # Disable problematic tests on Linux.
 # See https://github.com/conda-forge/staged-recipes/pull/8645
 if sys.platform != 'linux':
+    import psychopy.data
     import psychopy.event
     import psychopy.visual
     import psychopy.experiment
