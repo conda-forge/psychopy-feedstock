@@ -1,5 +1,5 @@
 {% set name = "PsychoPy" %}
-{% set version = "2022.2.5" %}
+{% set version = "2023.1.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.zip
-  sha256: c90d66d3149f0adc66d72181746554880e89544a8b70a44d573bacf41d98e7bf
+  sha256: e86df3d84363e2400f62e44753fcfee8959fcbf536ed29e4da88fe8bf9ce8308
 
 build:
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install --no-deps . -vv
   entry_points:
     - psychopy = psychopy.app.psychopyApp:main
