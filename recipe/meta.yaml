@@ -24,7 +24,7 @@ requirements:
     - python
     - pip
     - distro  # [linux]
-    - pdm
+    - pdm-backend
     - tomlkit
   run:
     - python
