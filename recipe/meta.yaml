@@ -24,6 +24,8 @@ requirements:
     - python
     - pip
     - distro  # [linux]
+    - pdm
+    - tomlkit
   run:
     - python
     - python.app               # [osx]
@@ -44,7 +46,6 @@ requirements:
     - imageio-ffmpeg
     - json_tricks
     - matplotlib
-    - moviepy
     - msgpack-numpy
     - msgpack-python
     - numpy
@@ -57,7 +58,6 @@ requirements:
     - glfw                     # [not linux]
     - glfw !=3.3.1             # [linux]
     - javascripthon            # [py>=3.5]
-    - pyglfw
     - pyobjc-framework-quartz  # [osx]
     - pyopengl
     - pyosf
