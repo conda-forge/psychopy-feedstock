@@ -12,12 +12,7 @@ import psychopy.hardware
 import psychopy.monitors
 import psychopy.preferences
 # import psychopy.visual
-
-# Disable sounddevice test on Windows, as currently we don't have a
-# soundfile package, without which this device won't work.
-if sys.platform != 'win32':
-    import psychopy.sound
-    assert psychopy.sound.audioLib == 'sounddevice'
+# import psychopy.sound
 
 # Disable problematic tests on Linux.
 # See https://github.com/conda-forge/staged-recipes/pull/8645

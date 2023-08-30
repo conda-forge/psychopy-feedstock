@@ -1,16 +1,16 @@
-{% set name = "PsychoPy" %}
-{% set version = "2022.2.5" %}
+{% set name = "psychopy" %}
+{% set version = "2023.2.1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.zip
-  sha256: c90d66d3149f0adc66d72181746554880e89544a8b70a44d573bacf41d98e7bf
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 95f83bcb50cb83817d010163541676414f02dad3f0e2e1f9a998283f938cd934
 
 build:
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install --no-deps . -vv
   entry_points:
     - psychopy = psychopy.app.psychopyApp:main
@@ -24,9 +24,12 @@ requirements:
     - python
     - pip
     - distro  # [linux]
+    - pdm-backend
+    - tomlkit
   run:
     - python
     - python.app               # [osx]
+    - cryptography
     - packaging
     - arabic_reshaper
     - astunparse
@@ -43,7 +46,6 @@ requirements:
     - imageio-ffmpeg
     - json_tricks
     - matplotlib
-    - moviepy
     - msgpack-numpy
     - msgpack-python
     - numpy
@@ -53,10 +55,7 @@ requirements:
     - pillow
     - psutil
     - pyglet >=1.4.9
-    - glfw                     # [not linux]
-    - glfw !=3.3.1             # [linux]
     - javascripthon            # [py>=3.5]
-    - pyglfw
     - pyobjc-framework-quartz  # [osx]
     - pyopengl
     - pyosf
