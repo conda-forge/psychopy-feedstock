@@ -1,4 +1,4 @@
-{% set name = "PsychoPy" %}
+{% set name = "psychopy" %}
 {% set version = "2023.2.1" %}
 
 package:
