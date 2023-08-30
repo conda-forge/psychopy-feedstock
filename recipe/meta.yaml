@@ -20,12 +20,12 @@ requirements:
   build:
     - python                                 # [build_platform != target_platform]
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
-  host:
-    - python
-    - pip
     - distro  # [linux]
     - pdm
     - tomlkit
+  host:
+    - python
+    - pip
   run:
     - python
     - python.app               # [osx]
